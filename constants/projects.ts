@@ -144,7 +144,7 @@ export const projectsData: Project[] = [
       "Advanced CSS Micro-interactions",
     ],
     image: "/portfolio-main.png",
-    linkLive: "https://portfolio_me.vercel.app/",
+    linkLive: "https://portfolio-me-ruddy-phi.vercel.app/",
     linkCode: "https://github.com/Buievska/portfolio_me",
   },
 ];
