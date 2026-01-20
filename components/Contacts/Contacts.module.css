@@ -1,0 +1,172 @@
+.contactsSection {
+  --card-width: 369px;
+  padding: 60px 20px;
+  background-color: #fce4ec;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: hidden;
+}
+
+.contactsSection::before {
+  content: "";
+  position: absolute;
+  top: 70%;
+  left: 0;
+  width: calc(50% - (var(--card-width) / 2));
+  height: 140px;
+  background-color: #7a4a5f;
+  transform: translateY(-50%);
+  z-index: 1;
+}
+
+.contactsSection::after {
+  content: "";
+  position: absolute;
+  top: 70%;
+  right: 0;
+  width: calc(50% - (var(--card-width) / 2));
+  height: 140px;
+  background-color: #7a4a5f;
+  transform: translateY(-50%);
+  z-index: 1;
+}
+
+.headerWrapper {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.title {
+  font-size: 36px;
+  font-weight: 800;
+  color: #4a1024;
+}
+
+.subtitle {
+  font-family: "Oswald", sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  letter-spacing: 0.03em;
+  text-align: center;
+  color: #53102b;
+}
+
+.formContainer {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.contactCard {
+  width: 100%;
+  max-width: var(--card-width);
+  border-radius: 30px;
+  border: 1px solid #fff7f7;
+  box-shadow: 4px 4px 16px 0 rgba(0, 0, 0, 0.25);
+  background: rgba(255, 255, 255, 0.12);
+  padding: 13px 30px;
+  backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(15px);
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.inputGroup {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.label {
+  font-weight: 400;
+  font-size: 14px;
+  letter-spacing: 0.03em;
+  text-align: center;
+  color: rgba(83, 16, 43, 0.88);
+  margin-bottom: 15px;
+}
+
+.input,
+.textarea {
+  width: 100%;
+  background: rgba(255, 255, 255, 0.2);
+  border: 1px solid #4a1024;
+  border-radius: 25px;
+  padding: 12px 25px;
+  font-size: 15px;
+  outline: none;
+  color: #4a1024;
+  transition: all 0.3s ease;
+}
+
+.textarea {
+  height: 138px;
+  border-radius: 20px;
+  resize: none;
+}
+
+.input:focus,
+.textarea:focus {
+  background: rgba(255, 255, 255, 0.5);
+  border-color: #5d152d;
+  box-shadow: 0 0 10px rgba(74, 16, 36, 0.15);
+  transform: translateY(-2px);
+}
+
+.input::placeholder,
+.textarea::placeholder {
+  color: #4a1024;
+  opacity: 0.5;
+  font-size: 14px;
+}
+
+.sendBtn {
+  background-color: #4a1024;
+  color: white;
+  padding: 14px 45px;
+  border-radius: 30px;
+  border: none;
+  font-weight: 700;
+  font-size: 16px;
+  cursor: pointer;
+  align-self: center;
+  transition: all 0.3s ease;
+}
+
+.sendBtn:hover {
+  background-color: #5d152d;
+  transform: scale(1.05);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+@media (min-width: 768px) {
+  .contactsSection {
+    --card-width: 520px;
+    padding: 45px 15px;
+  }
+
+  .contactCard {
+    padding: 30px 20px;
+    border-radius: 30px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .contactsSection {
+    --card-width: 441px;
+  }
+  .title {
+    font-size: 48px;
+  }
+}

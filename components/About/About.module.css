@@ -1,0 +1,173 @@
+.aboutSection {
+  padding: 60px 20px;
+  background-color: #fce4ec;
+  color: #4a1d33;
+}
+
+.container {
+  max-width: 375px;
+  margin: 0 auto;
+}
+
+.headerWrapper {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.title {
+  font-family: "Oswald", sans-serif;
+  font-weight: 700;
+  font-size: 32px;
+  letter-spacing: 0.03em;
+  text-align: center;
+  color: #53102b;
+}
+
+.subtitle {
+  font-family: "Oswald", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  letter-spacing: 0.03em;
+  text-align: center;
+  color: rgba(83, 16, 43, 0.88);
+  max-width: 334px;
+  margin: 0 auto;
+}
+
+.contentGrid {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.textColumn {
+  font-family: "Oswald", sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  letter-spacing: 0.03em;
+  color: #53102b;
+  max-width: 312px;
+  margin: 0 auto;
+  margin-bottom: 35px;
+}
+
+.textColumn p {
+  margin-bottom: 20px;
+}
+
+.visualColumn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+.imageContainer {
+  position: relative;
+  width: 250px;
+  height: 250px;
+  z-index: 1;
+  bottom: 75px;
+}
+
+.pinkCircle {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background-color: #ff80ab;
+  overflow: hidden;
+  border: 4px solid white;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.profileImage {
+  object-fit: cover;
+}
+
+.educationCard {
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  padding: 24px;
+
+  width: 100%;
+  max-width: 400px;
+
+  border: 1px solid #fff7f7;
+  border-radius: 16px;
+
+  z-index: 2;
+  margin-top: -50px;
+  box-shadow: 4px 4px 16px 0 rgba(0, 0, 0, 0.25);
+  background: rgba(255, 255, 255, 0.12);
+}
+
+.eduItem {
+  display: flex;
+  justify-content: space-between;
+  gap: 15px;
+  font-size: 13px;
+  margin-bottom: 20px;
+}
+
+.eduItem:last-child {
+  margin-bottom: 0;
+}
+
+.schoolName {
+  font-weight: 700;
+}
+.degreeName {
+  font-size: 12px;
+  opacity: 0.8;
+}
+.date {
+  font-weight: 600;
+  font-size: 12px;
+  white-space: nowrap;
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+
+  .title {
+    font-size: 36px;
+  }
+  .textColumn {
+    max-width: 425px;
+    margin-bottom: 40px;
+  }
+  .imageContainer {
+    width: 300px;
+    height: 300px;
+  }
+  .educationCard {
+    margin-top: -60px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .container {
+    max-width: 1440px;
+  }
+
+  .contentGrid {
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 250px;
+  }
+
+  .textColumn {
+    text-align: left;
+    flex: 1.2;
+    margin: 0;
+  }
+
+  .imageContainer {
+    width: 330px;
+    height: 330px;
+  }
+}

@@ -1,0 +1,67 @@
+::-webkit-scrollbar {
+  display: none;
+}
+
+:root {
+  --font-family: "Oswald", sans-serif;
+  --second-family: "Bebas Neue", sans-serif;
+}
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 5px;
+}
+
+html,
+body {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #fce4ec;
+  color: #1f2937;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+ul,
+ol {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+address {
+  font-style: normal;
+}
+
+button {
+  cursor: pointer;
+}
