@@ -43,6 +43,15 @@
   transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
 }
 
+.projectCard:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 20px 40px rgba(74, 16, 36, 0.15);
+}
+
+.projectCard:hover .projectImg {
+  transform: scale(1.03);
+}
+
 .imageWrapper {
   position: relative;
   width: 100%;
@@ -167,6 +176,16 @@
   border: 1px solid transparent;
 }
 
+.detailsBtn:hover {
+  background-color: #5d152d;
+  transform: translateY(-3px);
+  box-shadow: 0 5px 15px rgba(74, 16, 36, 0.3);
+}
+
+.detailsBtn:hover svg {
+  transform: translateX(5px);
+}
+
 .pagination {
   display: flex;
   justify-content: center;
@@ -184,6 +203,11 @@
   font-weight: 700;
   cursor: pointer;
   transition: all 0.3s ease;
+}
+
+.pageBtn:hover:not(.activePage) {
+  background-color: rgba(74, 16, 36, 0.1);
+  transform: scale(1.1);
 }
 
 .activePage {
@@ -227,28 +251,4 @@
   .sectionTitle {
     font-size: 48px;
   }
-}
-
-.projectCard:hover {
-  transform: translateY(-10px);
-  box-shadow: 0 20px 40px rgba(74, 16, 36, 0.15);
-}
-
-.projectCard:hover .projectImg {
-  transform: scale(1.08);
-}
-
-.detailsBtn:hover {
-  background-color: #5d152d;
-  transform: translateY(-3px);
-  box-shadow: 0 5px 15px rgba(74, 16, 36, 0.3);
-}
-
-.detailsBtn:hover svg {
-  transform: translateX(5px);
-}
-
-.pageBtn:hover:not(.activePage) {
-  background-color: rgba(74, 16, 36, 0.1);
-  transform: scale(1.1);
 }
