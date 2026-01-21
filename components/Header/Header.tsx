@@ -12,7 +12,7 @@ export default function Header() {
 
   const handleScroll = (
     e: React.MouseEvent<HTMLAnchorElement, MouseEvent>,
-    id: string
+    id: string,
   ) => {
     e.preventDefault();
     const element = document.getElementById(id);
@@ -64,7 +64,6 @@ export default function Header() {
         </nav>
 
         <div className={styles.rightSection}>
-          <span className={styles.langSwitcher}>EN</span>
           <Link
             href="https://drive.google.com/file/d/1sWBmQwf_8W_E6vMOpsC-1baUp2xum78N/view?usp=sharing"
             target="_blank"

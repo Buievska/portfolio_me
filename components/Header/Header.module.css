@@ -98,14 +98,6 @@
   gap: 20px;
 }
 
-.mobileLang {
-  font-weight: 700;
-  color: #4a1d33;
-  text-decoration: underline;
-  cursor: pointer;
-  font-size: 16px;
-}
-
 .mobileResumeBtn {
   background-color: #4a1024;
   color: #ffffff;
@@ -161,14 +153,6 @@
     display: flex;
     align-items: center;
     gap: 20px;
-  }
-
-  .langSwitcher {
-    font-weight: bold;
-    color: #4a1d33;
-    text-decoration: underline;
-    cursor: pointer;
-    font-size: 14px;
   }
 
   .resumeBtn {

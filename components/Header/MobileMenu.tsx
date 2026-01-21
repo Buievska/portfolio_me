@@ -7,14 +7,14 @@ interface MobileMenuProps {
   onClose: () => void;
   onScroll: (
     e: React.MouseEvent<HTMLAnchorElement, MouseEvent>,
-    id: string
+    id: string,
   ) => void;
 }
 
 export default function MobileMenu({ onClose, onScroll }: MobileMenuProps) {
   const handleLinkClick = (
     e: React.MouseEvent<HTMLAnchorElement, MouseEvent>,
-    id: string
+    id: string,
   ) => {
     onScroll(e, id);
     onClose();
@@ -70,7 +70,6 @@ export default function MobileMenu({ onClose, onScroll }: MobileMenuProps) {
       </nav>
 
       <div className={styles.mobileActions}>
-        <span className={styles.mobileLang}>EN</span>
         <Link href="/" className={styles.mobileResumeBtn} onClick={onClose}>
           Resume
         </Link>
