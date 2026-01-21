@@ -8,6 +8,8 @@ import Footer from "@/components/Footer/Footer";
 const oswald = Oswald({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://portfolio-me-ruddy-phi.vercel.app/"),
+
   title: {
     default: "Anna Buievska | Full-Stack Developer Portfolio",
     template: "%s | Anna Buievska",
