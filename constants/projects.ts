@@ -164,4 +164,21 @@ export const projectsData: Project[] = [
     linkLive: "https://lkperfect-body.vercel.app/",
     linkCode: "https://github.com/Buievska/lkperfect-body",
   },
+  {
+    id: 10,
+    title: "SSTrans",
+    role: "Full-Stack Developer & Lead Designer",
+    description:
+      "Development of a modern corporate website for a family transport and logistics company. The website showcases freight transport services across the Czech Republic and Europe with a clean, responsive layout and intuitive request workflows.",
+    tags: ["Next.js", "React", "Tailwind CSS", "TypeScript", "UI/UX Design"],
+    features: [
+      "Responsive & Mobile-First Layout",
+      "Modern Cargo Route Visualization",
+      "Service Offerings Showcase",
+      "Quick Freight Quote Request Form",
+    ],
+    image: "/sstrans.png",
+    linkLive: "https://sstrans-website.vercel.app/",
+    linkCode: "https://github.com/Buievska/sstrans-website",
+  },
 ];
