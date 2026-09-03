@@ -147,4 +147,21 @@ export const projectsData: Project[] = [
     linkLive: "https://portfolio-me-ruddy-phi.vercel.app/",
     linkCode: "https://github.com/Buievska/portfolio_me",
   },
+   {
+    id: 9,
+    title: "Perfect Body LK",
+    role: "Full-Stack Developer & Lead Designer",
+    description:
+      "Development of a modern personal website for a physical therapist and rehabilitation specialist. The project combines a responsive user interface with Sanity CMS for managing educational content, certificates, and blog materials.",
+    tags: ["Next.js", "TypeScript", "Sanity CMS", "React", "Tailwind CSS", "UI/UX Design"],
+    features: [
+       "Responsive & Mobile-First Design",
+       "Sanity CMS Integration",
+       "Dynamic Blog Content",
+       "Certificates & Experience Showcase",
+    ],
+    image: "/perfectbody.png",
+    linkLive: "https://lkperfect-body.vercel.app/",
+    linkCode: "https://github.com/Buievska/lkperfect-body",
+  },
 ];
